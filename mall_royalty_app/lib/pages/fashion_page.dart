@@ -41,7 +41,12 @@ class FashionPage extends StatelessWidget {
               child: ListView.builder(
                 itemCount: tokoFashion.length,
                 itemBuilder: (context, index) {
-                  return buildTokoFashionContainer(context, index);
+                  return GestureDetector(
+                    onTap: () {
+                      _handleTokoFashionTap(context, index);
+                    },
+                    child: buildTokoFashionContainer(context, index),
+                  );
                 },
               ),
             ),
@@ -49,6 +54,44 @@ class FashionPage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _handleTokoFashionTap(BuildContext context, int index) {
+    // Define actions for each container based on the index
+    switch (index) {
+      case 0:
+        Navigator.pushNamed(context, '/description');
+        break;
+      case 1:
+        Navigator.pushNamed(context, '/solesclupt');
+        break;
+      case 2:
+        Navigator.pushNamed(context, '/glamour');
+        break;
+      case 3:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 4:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 5:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 6:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 7:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 8:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 9:
+        Navigator.pushNamed(context, '/home');
+      case 10:
+        Navigator.pushNamed(context, '/home');
+        break;
+    }
   }
 
   Widget buildTokoFashionContainer(BuildContext context, int index) {
@@ -85,59 +128,6 @@ class FashionPage extends StatelessWidget {
   }
 }
 
-const List<TokoFashion> tokoFashion = const [
-  TokoFashion(
-    nama: "ChicVibe",
-    deskripsi: "Kids fashion",
-    rating: 4.8,
-  ),
-  TokoFashion(
-    nama: "SoleSclupt",
-    deskripsi: "Shoe heaven",
-    rating: 4.5,
-  ),
-  TokoFashion(
-    nama: "Glamour Accessories",
-    deskripsi: "accessories for you",
-    rating: 4.7,
-  ),
-  TokoFashion(
-    nama: "Denim Delights",
-    deskripsi: "jeans and casual wear",
-    rating: 4.3,
-  ),
-  TokoFashion(
-    nama: "Elegant ensembles",
-    deskripsi: "for your formal wear",
-    rating: 4.9,
-  ),
-  TokoFashion(
-    nama: "Sporty Styles",
-    deskripsi: "for your daily sports wear",
-    rating: 4.7,
-  ),
-  TokoFashion(
-    nama: "Kids Culture",
-    deskripsi: "kids clothing",
-    rating: 4.2,
-  ),
-  TokoFashion(
-    nama: "Lingerie lounge",
-    deskripsi: "adult intimate apparel",
-    rating: 5.0,
-  ),
-  TokoFashion(
-    nama: "vintage vogue",
-    deskripsi: "retro clothing",
-    rating: 4.9,
-  ),
-  TokoFashion(
-    nama: "Outdoor Outfitters",
-    deskripsi: "for outdoor clothing",
-    rating: 4.5,
-  ),
-];
-
 class TokoFashion {
   final String nama;
   final String deskripsi;
@@ -149,3 +139,56 @@ class TokoFashion {
     required this.rating,
   });
 }
+
+const List<TokoFashion> tokoFashion = const [
+  TokoFashion(
+    nama: "ChicVibe",
+    deskripsi: "Kids fashion",
+    rating: 4.8,
+  ),
+  TokoFashion(
+    nama: "SoleSculpt",
+    deskripsi: "Shoe heaven",
+    rating: 4.5,
+  ),
+  TokoFashion(
+    nama: "Glamour Accessories",
+    deskripsi: "Accessories for you",
+    rating: 4.7,
+  ),
+  TokoFashion(
+    nama: "Denim Delights",
+    deskripsi: "Jeans and casual wear",
+    rating: 4.3,
+  ),
+  TokoFashion(
+    nama: "Elegant Ensembles",
+    deskripsi: "For your formal wear",
+    rating: 4.9,
+  ),
+  TokoFashion(
+    nama: "Sporty Styles",
+    deskripsi: "For your daily sports wear",
+    rating: 4.7,
+  ),
+  TokoFashion(
+    nama: "Kids Culture",
+    deskripsi: "Kids clothing",
+    rating: 4.2,
+  ),
+  TokoFashion(
+    nama: "Lingerie Lounge",
+    deskripsi: "Adult intimate apparel",
+    rating: 5.0,
+  ),
+  TokoFashion(
+    nama: "Vintage Vogue",
+    deskripsi: "Retro clothing",
+    rating: 4.9,
+  ),
+  TokoFashion(
+    nama: "Outdoor Outfitters",
+    deskripsi: "For outdoor clothing",
+    rating: 4.5,
+  ),
+];

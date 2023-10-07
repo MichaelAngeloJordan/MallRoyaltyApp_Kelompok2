@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signup_page/pages/description_page.dart';
 import 'package:signup_page/pages/electronics_page.dart';
 import 'package:signup_page/pages/fashion_page.dart';
 import 'package:signup_page/pages/foodcourt_page.dart';
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
         '/electronics': (context) => const ElectronicsPage(),
         '/makanan': (context) => const TokoMakananPage(),
         '/fashion': (context) => const FashionPage(),
+        '/description': (context) => const DescriptionPage(),
+        '/solesclupt': (context) => const SoleScluptDescriptionPage(),
+        '/glamour': (context) => const GlamourAccessoriesDescriptionPage(),
       },
     );
   }
