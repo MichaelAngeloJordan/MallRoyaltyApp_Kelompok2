@@ -51,7 +51,7 @@ class SignInPage extends StatelessWidget {
                       ),
                     ),
                     CustomButton(
-                      onTap: () => Navigator.pushNamed(context, '/fashion'),
+                      onTap: () => Navigator.pushNamed(context, '/home'),
                       textButton: 'Login',
                     ),
                     SizedBox(height: 30),

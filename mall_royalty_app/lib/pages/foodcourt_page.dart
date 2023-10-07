@@ -30,7 +30,7 @@ class TokoMakananPage extends StatelessWidget {
                 child: Column(
                   children: [
                     CustomButton(
-                      onTap: () => Navigator.pushNamed(context, '/'),
+                      onTap: () => Navigator.pushNamed(context, '/home'),
                       textButton: 'Back',
                     ),
                   ],

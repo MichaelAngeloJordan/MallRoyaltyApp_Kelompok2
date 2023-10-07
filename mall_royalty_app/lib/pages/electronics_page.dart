@@ -30,8 +30,8 @@ class ElectronicsPage extends StatelessWidget {
                 child: Column(
                   children: [
                     CustomButton(
-                      onTap: () => Navigator.pushNamed(context, '/makanan'),
-                      textButton: 'FoodCourt',
+                      onTap: () => Navigator.pushNamed(context, '/home'),
+                      textButton: 'back',
                     ),
                   ],
                 ),

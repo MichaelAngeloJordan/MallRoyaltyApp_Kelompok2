@@ -30,8 +30,8 @@ class FashionPage extends StatelessWidget {
                 child: Column(
                   children: [
                     CustomButton(
-                      onTap: () => Navigator.pushNamed(context, '/electronics'),
-                      textButton: 'Electronics',
+                      onTap: () => Navigator.pushNamed(context, '/home'),
+                      textButton: 'Back',
                     ),
                   ],
                 ),
