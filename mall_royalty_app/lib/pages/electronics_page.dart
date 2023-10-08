@@ -97,7 +97,7 @@ const List<TokoElectronics> tokoElectronics = const [
     rating: 4.3,
   ),
   TokoElectronics(
-    nama: "Appliance Arena",
+    nama: "Appliance Haven",
     deskripsi: "Electronics for Home Appliances",
     rating: 5.0,
   ),
@@ -122,7 +122,7 @@ const List<TokoElectronics> tokoElectronics = const [
     rating: 5.0,
   ),
   TokoElectronics(
-    nama: "Sound Scape",
+    nama: "Read Emerge",
     deskripsi: "Digital Music and Others",
     rating: 4.8,
   ),

@@ -92,12 +92,12 @@ const List<TokoMakanan> tokoMakanan = const [
     rating: 5.0,
   ),
   TokoMakanan(
-    nama: "Flavor Street Bite",
+    nama: "Flavor Street Bites",
     deskripsi: "street food",
     rating: 4.8,
   ),
   TokoMakanan(
-    nama: "Sakura Sushi",
+    nama: "Sakura Sushi Haven",
     deskripsi: "Japanese cuisine",
     rating: 4.9,
   ),
@@ -112,7 +112,7 @@ const List<TokoMakanan> tokoMakanan = const [
     rating: 4.5,
   ),
   TokoMakanan(
-    nama: "Wok Master Noodle",
+    nama: "Wok Master's Noodle",
     deskripsi: "Chinese noodle",
     rating: 4.3,
   ),

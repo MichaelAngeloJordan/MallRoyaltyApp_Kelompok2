@@ -66,16 +66,16 @@ class FashionPage extends StatelessWidget {
         Navigator.pushNamed(context, '/solesclupt');
         break;
       case 2:
-        Navigator.pushNamed(context, '/glamour');
+        Navigator.pushNamed(context, '/glam');
         break;
       case 3:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/denim');
         break;
       case 4:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/elegant');
         break;
       case 5:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/sporty');
         break;
       case 6:
         Navigator.pushNamed(context, '/home');
@@ -142,52 +142,52 @@ class TokoFashion {
 
 const List<TokoFashion> tokoFashion = const [
   TokoFashion(
-    nama: "ChicVibe",
+    nama: "Chic Vibe",
     deskripsi: "Kids fashion",
     rating: 4.8,
   ),
   TokoFashion(
-    nama: "SoleSculpt",
+    nama: "Sole Sculpt",
     deskripsi: "Shoe heaven",
     rating: 4.5,
   ),
   TokoFashion(
-    nama: "Glamour Accessories",
+    nama: "Glam Groove",
     deskripsi: "Accessories for you",
     rating: 4.7,
   ),
   TokoFashion(
-    nama: "Denim Delights",
+    nama: "Denim Dash",
     deskripsi: "Jeans and casual wear",
     rating: 4.3,
   ),
   TokoFashion(
-    nama: "Elegant Ensembles",
+    nama: "Elega Mode",
     deskripsi: "For your formal wear",
     rating: 4.9,
   ),
   TokoFashion(
-    nama: "Sporty Styles",
+    nama: "Active Pulse",
     deskripsi: "For your daily sports wear",
     rating: 4.7,
   ),
   TokoFashion(
-    nama: "Kids Culture",
+    nama: "Tiny Trendz",
     deskripsi: "Kids clothing",
     rating: 4.2,
   ),
   TokoFashion(
-    nama: "Lingerie Lounge",
+    nama: "Luxe Lace",
     deskripsi: "Adult intimate apparel",
     rating: 5.0,
   ),
   TokoFashion(
-    nama: "Vintage Vogue",
+    nama: "Retro Chic",
     deskripsi: "Retro clothing",
     rating: 4.9,
   ),
   TokoFashion(
-    nama: "Outdoor Outfitters",
+    nama: "Adventure Peak",
     deskripsi: "For outdoor clothing",
     rating: 4.5,
   ),

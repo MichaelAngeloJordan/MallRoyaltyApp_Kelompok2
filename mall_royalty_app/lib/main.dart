@@ -26,7 +26,11 @@ class MyApp extends StatelessWidget {
         '/fashion': (context) => const FashionPage(),
         '/description': (context) => const DescriptionPage(),
         '/solesclupt': (context) => const SoleScluptDescriptionPage(),
-        '/glamour': (context) => const GlamourAccessoriesDescriptionPage(),
+        '/glam': (context) => const GlamGrooveDescriptionPage(),
+        '/': (context) => const SignInPage(),
+        '/': (context) => const SignInPage(),
+        '/': (context) => const SignInPage(),
+        '/': (context) => const SignInPage(),
       },
     );
   }
