@@ -201,3 +201,185 @@ class GlamGrooveDescriptionPage extends StatelessWidget {
     );
   }
 }
+
+class DenimDashDescriptionPage extends StatelessWidget {
+  const DenimDashDescriptionPage({Key? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: Utilities.gradient,
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              // Container for the "Back" button
+              Container(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 30, horizontal: 40), // Adjust padding as needed
+                child: CustomButton(
+                  onTap: () => Navigator.pushNamed(context, '/home'),
+                  textButton: 'Back',
+                ),
+              ),
+              // Container for the description
+              Container(
+                child: CustomCardSignUp(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 30, horizontal: 40),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.symmetric(vertical: 10),
+                          child: const Text(
+                            'Selamat datang di DenimDash, destinasi utama bagi para pencinta mode denim yang bersemangat!\n\n'
+                            'Di DenimDash, kami merangkul kebebasan berekspresi dan gaya yang unik melalui koleksi denim kami yang luas dan trendi. Dari jeans yang nyaman hingga jaket denim yang stylish, kami menawarkan pilihan yang tak terbatas untuk menyesuaikan gaya Anda.\n\n'
+                            'Kami bangga menyediakan denim berkualitas tinggi yang tidak hanya memberikan kenyamanan maksimal, tetapi juga memberikan sentuhan gaya yang tak tertandingi. Setiap potongan pakaian di DenimDash dirancang dengan perhatian pada detail, memastikan bahwa setiap produk yang Anda beli adalah investasi dalam gaya dan kualitas.\n\n'
+                            'Tidak peduli apakah Anda mencari gaya kasual untuk sehari-hari atau tampilan yang lebih glamor untuk acara khusus, DenimDash memiliki sesuatu untuk setiap kesempatan. Mari jelajahi dunia denim kami dan temukan potongan-potongan yang menggambarkan kepribadian Anda. Bergabunglah dengan kami di DenimDash dan biarkan denim menjadi kanvas bagi kreativitas dan gaya Anda!',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class EleganDescriptionPage extends StatelessWidget {
+  const EleganDescriptionPage({Key? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: Utilities.gradient,
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              // Container for the "Back" button
+              Container(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 30, horizontal: 40), // Adjust padding as needed
+                child: CustomButton(
+                  onTap: () => Navigator.pushNamed(context, '/home'),
+                  textButton: 'Back',
+                ),
+              ),
+              // Container for the description
+              Container(
+                child: CustomCardSignUp(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 30, horizontal: 40),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.symmetric(vertical: 10),
+                          child: const Text(
+                            'Selamat datang di ElegaMod, tempat di mana keanggunan bertemu dengan kekinian dalam setiap jahitan.\n\n'
+                            'Kami adalah destinasi terbaik untuk para pencinta fashion yang menghargai keindahan dalam setiap detail. Di ElegaMod, kami menghadirkan koleksi pakaian dan aksesori yang membawa nuansa klasik yang selalu modis.\n\n'
+                            'Setiap potongan pakaian yang kami tawarkan adalah perpaduan sempurna antara desain modern dan tradisional, menciptakan tampilan yang tak lekang oleh waktu. Kami memahami bahwa gaya adalah cara terbaik untuk mengekspresikan kepribadian Anda, dan itulah mengapa kami berkomitmen untuk memberikan produk-produk berkualitas tinggi yang memenuhi standar elegansi dan ketenaran.\n\n'
+                            'Dari gaun yang memukau hingga aksesori yang mendetail, setiap produk di ElegaMod dipilih dengan hati-hati untuk memastikan bahwa setiap pelanggan merasa istimewa dan percaya diri dalam pilihan fashion mereka. Mari temukan keanggunan yang abadi dan gaya yang melekat pada ElegaMod. Sambutlah dunia fashion yang tiada batas dan biarkan diri Anda memancarkan pesona yang tak tertandingi. Selamat berbelanja dengan gaya di ElegaMod!',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class ActivePulseDescriptionPage extends StatelessWidget {
+  const ActivePulseDescriptionPage({Key? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: Utilities.gradient,
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              // Container for the "Back" button
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 30,
+                  horizontal: 40,
+                ), // Adjust padding as needed
+                child: CustomButton(
+                  onTap: () => Navigator.pushNamed(context, '/home'),
+                  textButton: 'Back',
+                ),
+              ),
+              // Container for the description
+              Container(
+                child: CustomCardSignUp(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 30,
+                      horizontal: 40,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.symmetric(vertical: 10),
+                          child: const Text(
+                            'Selamat datang di ActivePulse, tempatnya para penggiat kebugaran dan petualang yang tidak kenal lelah!\n\n'
+                            'Di sini, kami memahami bahwa gaya hidup aktif adalah tentang lebih dari sekadar bergerak; ini adalah tentang menjalani kehidupan dengan semangat dan energi yang tak terbatas. ActivePulse adalah jawaban bagi mereka yang mencari aktivitas fisik dengan gaya yang tak tertandingi.\n\n'
+                            'Kami bangga menyajikan koleksi pakaian olahraga yang dirancang khusus untuk memberikan kenyamanan dan performa terbaik saat Anda bergerak. Dari pakaian lari yang ringan hingga perlengkapan hiking yang tahan lama, setiap produk di ActivePulse menjunjung tinggi standar kualitas dan inovasi.\n\n'
+                            'Tidak hanya sekadar pakaian olahraga, kami juga menawarkan berbagai aksesori dan peralatan yang mendukung gaya hidup aktif Anda. Dengan fokus pada desain ergonomis dan teknologi terkini, produk-produk kami membantu Anda mencapai tujuan kebugaran Anda dengan maksimal.\n\n'
+                            'Bergabunglah dengan komunitas ActivePulse dan temukan energi baru dalam setiap gerakan. Apakah Anda seorang pelari yang berdedikasi, penggemar yoga yang tekun, atau petualang alam yang penuh semangat, kami memiliki semua yang Anda butuhkan untuk mendukung perjalanan aktif Anda. Jadilah inspirasi, hidupi semangat sehat, dan temukan kebugaran dengan gaya di ActivePulse!',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

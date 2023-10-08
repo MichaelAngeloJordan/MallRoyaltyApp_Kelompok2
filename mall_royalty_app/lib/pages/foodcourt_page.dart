@@ -41,7 +41,12 @@ class TokoMakananPage extends StatelessWidget {
               child: ListView.builder(
                 itemCount: tokoMakanan.length,
                 itemBuilder: (context, index) {
-                  return buildTokoMakananContainer(context, index);
+                  return GestureDetector(
+                    onTap: () {
+                      _handleTokoMakananTap(context, index);
+                    },
+                    child: buildTokoMakananContainer(context, index),
+                  );
                 },
               ),
             ),
@@ -49,6 +54,43 @@ class TokoMakananPage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _handleTokoMakananTap(BuildContext context, int index) {
+    // Define actions for each container based on the index
+    switch (index) {
+      case 0:
+        Navigator.pushNamed(context, '/description');
+        break;
+      case 1:
+        Navigator.pushNamed(context, '/solesclupt');
+        break;
+      case 2:
+        Navigator.pushNamed(context, '/glam');
+        break;
+      case 3:
+        Navigator.pushNamed(context, '/denim');
+      case 4:
+        Navigator.pushNamed(context, '/active');
+        break;
+      case 5:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 6:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 7:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 8:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 9:
+        Navigator.pushNamed(context, '/home');
+      case 10:
+        Navigator.pushNamed(context, '/home');
+        break;
+    }
   }
 
   Widget buildTokoMakananContainer(BuildContext context, int index) {

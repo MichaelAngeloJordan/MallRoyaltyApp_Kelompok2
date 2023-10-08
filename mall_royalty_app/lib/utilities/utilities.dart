@@ -8,7 +8,7 @@ class Utilities {
     end: Alignment.bottomCenter,
     colors: [
       primaryColor,
-      Color.fromARGB(255, 237, 222, 148),
+      Color(0xFFEDDE94),
     ],
   );
 }
