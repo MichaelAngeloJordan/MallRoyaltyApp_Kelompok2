@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signup_page/pages/calendar_page.dart';
 import 'package:signup_page/pages/description_page.dart';
 import 'package:signup_page/pages/diskon_page.dart';
 import 'package:signup_page/pages/electronics_page.dart';
@@ -6,9 +7,12 @@ import 'package:signup_page/pages/fashion_page.dart';
 import 'package:signup_page/pages/foodcourt_page.dart';
 import 'package:signup_page/pages/home_page.dart';
 import 'package:signup_page/pages/map_a_page.dart';
+import 'package:signup_page/pages/map_b_page.dart';
+import 'package:signup_page/pages/map_c_page.dart';
 import 'package:signup_page/pages/map_page.dart';
 import 'package:signup_page/pages/rating_page.dart';
 import 'package:signup_page/pages/sign_up_pages.dart';
+import 'package:table_calendar/table_calendar.dart';
 import 'pages/sign_in_page.dart';
 
 void main() => runApp(const MyApp());
@@ -36,9 +40,11 @@ class MyApp extends StatelessWidget {
         '/active': (context) => const ActivePulseDescriptionPage(),
         '/map': (context) => const MapPage(),
         '/mapa': (context) => const MapA(),
-        '/mapb': (context) => const MapA(),
+        '/mapb': (context) => const MapB(),
+        '/mapc': (context) => const MapC(),
         '/rating': (context) => const MyShopInfo(),
         '/diskon': (context) => const DiskonPage(),
+        '/calendar': (context) => const CalendarApp(),
       },
     );
   }

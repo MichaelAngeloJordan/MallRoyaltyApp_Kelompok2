@@ -53,7 +53,7 @@ class MapPage extends StatelessWidget {
                               color: Color.fromRGBO(71, 3, 3, 1),
                             ),
                             child: Icon(
-                              Icons.star,
+                              Icons.map,
                               size: 40.0,
                               color: Colors.amber,
                             ),
@@ -84,7 +84,7 @@ class MapPage extends StatelessWidget {
                               color: Color.fromRGBO(71, 3, 3, 1),
                             ),
                             child: Icon(
-                              Icons.favorite,
+                              Icons.map,
                               size: 40.0,
                               color: Colors.red,
                             ),
@@ -103,8 +103,7 @@ class MapPage extends StatelessWidget {
                     SizedBox(height: 20.0), // Add spacing below the second icon
                     GestureDetector(
                       onTap: () {
-                        // Handle the onTap action for the third icon
-                        print('Third Icon Tapped');
+                        Navigator.pushNamed(context, '/mapc');
                       },
                       child: Column(
                         children: <Widget>[
@@ -116,7 +115,7 @@ class MapPage extends StatelessWidget {
                               color: Color.fromRGBO(71, 3, 3, 1),
                             ),
                             child: Icon(
-                              Icons.location_on,
+                              Icons.map,
                               size: 40.0,
                               color: Colors.blue,
                             ),

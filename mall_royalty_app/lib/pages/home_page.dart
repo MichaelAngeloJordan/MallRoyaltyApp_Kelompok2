@@ -119,7 +119,7 @@ class HomePage extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, '/map');
+                      Navigator.pushNamed(context, '/calendar');
                     },
                     child: Container(
                       width: 80.0,

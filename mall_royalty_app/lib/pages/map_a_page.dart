@@ -1,56 +1,85 @@
 import 'package:flutter/material.dart';
+import 'package:signup_page/widgets/custom_button.dart';
+import 'package:signup_page/widgets/custom_card_sign_up.dart';
+
+class Utilities {
+  static Color primaryColor = const Color(0XFFAB917A);
+  static LinearGradient gradient = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [
+      primaryColor,
+      Color.fromARGB(255, 237, 222, 148),
+    ],
+  );
+}
 
 class MapA extends StatefulWidget {
   const MapA({Key? key}) : super(key: key);
 
   @override
-  _MapA1State createState() => _MapA1State(); // Fix this line
+  _MapAState createState() => _MapAState();
 }
 
-class _MapA1State extends State<MapA> {
+class _MapAState extends State<MapA> {
   double _scale = 1.0;
-  late GlobalKey<AnimatedListState> _listKey;
-  final TransformationController _controller = TransformationController();
-  late double _previousScale;
-  Offset? _previousOffset;
-
-  @override
-  void initState() {
-    super.initState();
-    _listKey = GlobalKey<AnimatedListState>();
-  }
 
   void _onScaleStart(ScaleStartDetails details) {
-    _previousScale = _scale;
-    _previousOffset = details.focalPoint;
+    // ...
   }
 
   void _onScaleUpdate(ScaleUpdateDetails details) {
     setState(() {
-      _scale = _previousScale * details.scale;
-      if (_scale < 1.0) {
-        _scale = 1.0;
-      }
+      _scale =
+          details.scale.clamp(1.0, 3.0); // Limit zoom scale between 1.0 and 3.0
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Zoomable Image'),
-      ),
-      body: Center(
-        child: GestureDetector(
-          onScaleStart: _onScaleStart,
-          onScaleUpdate: _onScaleUpdate,
-          child: Transform(
-            transform: Matrix4.diagonal3Values(_scale, _scale, 1.0),
-            alignment: Alignment.center,
-            child: Image.asset(
-              'assets/map_a1.jpg', // Replace with your image asset path
-              fit: BoxFit.contain,
-            ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: Utilities.gradient,
+        ),
+        child: InteractiveViewer(
+          panEnabled: true, // Enable panning
+          boundaryMargin: EdgeInsets.all(double.infinity),
+          minScale: 1.0, // Minimum scale
+          maxScale: 3.0, // Maximum scale
+          child: Stack(
+            children: [
+              Center(
+                child: GestureDetector(
+                  onScaleStart: _onScaleStart,
+                  onScaleUpdate: _onScaleUpdate,
+                  child: Transform.scale(
+                    scale: _scale,
+                    child: Image.asset(
+                      'assets/map_a1.jpg',
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 0,
+                left: 0,
+                right: 0,
+                child: CustomCardSignUp(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 30,
+                      horizontal: 50,
+                    ),
+                    child: CustomButton(
+                      onTap: () => Navigator.pushNamed(context, '/home'),
+                      textButton: 'Back',
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
