@@ -60,35 +60,33 @@ class ElectronicsPage extends StatelessWidget {
     // Define actions for each container based on the index
     switch (index) {
       case 0:
-        Navigator.pushNamed(context, '/description');
+        Navigator.pushNamed(context, '/electro');
         break;
       case 1:
-        Navigator.pushNamed(context, '/solesclupt');
+        Navigator.pushNamed(context, '/gizmo');
         break;
       case 2:
-        Navigator.pushNamed(context, '/glam');
+        Navigator.pushNamed(context, '/appliance');
         break;
       case 3:
-        Navigator.pushNamed(context, '/denim');
+        Navigator.pushNamed(context, '/game');
       case 4:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/sonic');
         break;
       case 5:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/shutter');
         break;
       case 6:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/tech');
         break;
       case 7:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/read');
         break;
       case 8:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/sky');
         break;
       case 9:
-        Navigator.pushNamed(context, '/home');
-      case 10:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/weartech');
         break;
       // Add more cases if needed...
     }

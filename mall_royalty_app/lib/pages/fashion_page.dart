@@ -75,21 +75,19 @@ class FashionPage extends StatelessWidget {
         Navigator.pushNamed(context, '/elegan');
         break;
       case 5:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/active');
         break;
       case 6:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/tiny');
         break;
       case 7:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/luxe');
         break;
       case 8:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/retro');
         break;
       case 9:
-        Navigator.pushNamed(context, '/home');
-      case 10:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/adventure');
         break;
     }
   }
@@ -192,62 +190,3 @@ const List<TokoFashion> tokoFashion = const [
     rating: 4.5,
   ),
 ];
-
-class ElegaModDescriptionPage extends StatelessWidget {
-  const ElegaModDescriptionPage({Key? key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        width: double.infinity,
-        decoration: BoxDecoration(
-          gradient: Utilities.gradient,
-        ),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              // Container for the "Back" button
-              Container(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 30, horizontal: 40), // Adjust padding as needed
-                child: CustomButton(
-                  onTap: () => Navigator.pushNamed(context, '/home'),
-                  textButton: 'Back',
-                ),
-              ),
-              // Container for the description
-              Container(
-                child: CustomCardSignUp(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 30, horizontal: 40),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.symmetric(vertical: 10),
-                          child: const Text(
-                            'Selamat datang di ElegaMod, tempat di mana keanggunan bertemu dengan kekinian dalam setiap jahitan.\n\n'
-                            'Kami adalah destinasi terbaik untuk para pencinta fashion yang menghargai keindahan dalam setiap detail. Di ElegaMod, kami menghadirkan koleksi pakaian dan aksesori yang membawa nuansa klasik yang selalu modis.\n\n'
-                            'Setiap potongan pakaian yang kami tawarkan adalah perpaduan sempurna antara desain modern dan tradisional, menciptakan tampilan yang tak lekang oleh waktu. Kami memahami bahwa gaya adalah cara terbaik untuk mengekspresikan kepribadian Anda, dan itulah mengapa kami berkomitmen untuk memberikan produk-produk berkualitas tinggi yang memenuhi standar elegansi dan ketenaran.\n\n'
-                            'Dari gaun yang memukau hingga aksesori yang mendetail, setiap produk di ElegaMod dipilih dengan hati-hati untuk memastikan bahwa setiap pelanggan merasa istimewa dan percaya diri dalam pilihan fashion mereka. Mari temukan keanggunan yang abadi dan gaya yang melekat pada ElegaMod. Sambutlah dunia fashion yang tiada batas dan biarkan diri Anda memancarkan pesona yang tak tertandingi. Selamat berbelanja dengan gaya di ElegaMod!',
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Color.fromARGB(255, 255, 255, 255),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}

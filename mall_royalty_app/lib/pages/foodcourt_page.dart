@@ -60,35 +60,33 @@ class TokoMakananPage extends StatelessWidget {
     // Define actions for each container based on the index
     switch (index) {
       case 0:
-        Navigator.pushNamed(context, '/description');
+        Navigator.pushNamed(context, '/epicurean');
         break;
       case 1:
-        Navigator.pushNamed(context, '/solesclupt');
+        Navigator.pushNamed(context, '/flavor');
         break;
       case 2:
-        Navigator.pushNamed(context, '/glam');
+        Navigator.pushNamed(context, '/sakura');
         break;
       case 3:
-        Navigator.pushNamed(context, '/denim');
+        Navigator.pushNamed(context, '/pizza');
       case 4:
-        Navigator.pushNamed(context, '/active');
+        Navigator.pushNamed(context, '/masala');
         break;
       case 5:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/wok');
         break;
       case 6:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/veggies');
         break;
       case 7:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/catch');
         break;
       case 8:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/dolce');
         break;
       case 9:
-        Navigator.pushNamed(context, '/home');
-      case 10:
-        Navigator.pushNamed(context, '/home');
+        Navigator.pushNamed(context, '/brewed');
         break;
     }
   }

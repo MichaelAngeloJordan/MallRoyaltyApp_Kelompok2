@@ -52,10 +52,7 @@ class HomePage extends StatelessWidget {
                         ClickableIconContainer(
                           iconName: 'reward',
                           icon: Icons.attach_money,
-                          onTap: () {
-                            // Handle reward icon click action here
-                            print('Reward icon clicked!');
-                          },
+                          onTap: () => Navigator.pushNamed(context, '/reward'),
                         ),
                         ClickableIconContainer(
                           iconName: 'discount',
