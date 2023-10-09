@@ -41,7 +41,7 @@ class MapPage extends StatelessWidget {
                     GestureDetector(
                       onTap: () {
                         // Handle the onTap action for the first icon
-                        print('First Icon Tapped');
+                        Navigator.pushNamed(context, '/mapa');
                       },
                       child: Column(
                         children: <Widget>[
@@ -72,8 +72,7 @@ class MapPage extends StatelessWidget {
                     SizedBox(height: 20.0), // Add spacing between icons
                     GestureDetector(
                       onTap: () {
-                        // Handle the onTap action for the second icon
-                        print('Second Icon Tapped');
+                        Navigator.pushNamed(context, '/mapb');
                       },
                       child: Column(
                         children: <Widget>[
