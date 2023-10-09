@@ -35,9 +35,9 @@ class HomePage extends StatelessWidget {
                   child: Text(
                     'MALLOPS',
                     style: TextStyle(
-                      fontSize: 48.0,
+                      fontSize: 78.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                      color: Color.fromRGBO(71, 3, 3, 1),
                     ),
                   ),
                 ),
@@ -99,34 +99,40 @@ class HomePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Container(
-                    width: 80.0,
-                    height: 80.0,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Color.fromRGBO(71, 3, 3, 1),
-                    ),
-                    child: IconButton(
-                      onPressed: () {
-                        // Handle the first IconButton action
-                      },
-                      icon: Icon(Icons.favorite),
-                      color: Colors.red, // Set your desired icon color
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/map');
+                    },
+                    child: Container(
+                      width: 80.0,
+                      height: 80.0,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Color.fromRGBO(71, 3, 3, 1),
+                      ),
+                      child: Icon(
+                        Icons.map,
+                        size: 40.0,
+                        color: Colors.red, // Set your desired icon color
+                      ),
                     ),
                   ),
-                  Container(
-                    width: 80.0,
-                    height: 80.0,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Color.fromRGBO(71, 3, 3, 1),
-                    ),
-                    child: IconButton(
-                      onPressed: () {
-                        // Handle the second IconButton action
-                      },
-                      icon: Icon(Icons.share),
-                      color: Colors.blue, // Set your desired icon color
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/map');
+                    },
+                    child: Container(
+                      width: 80.0,
+                      height: 80.0,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Color.fromRGBO(71, 3, 3, 1),
+                      ),
+                      child: Icon(
+                        Icons.calendar_month,
+                        size: 40.0,
+                        color: Colors.blue, // Set your desired icon color
+                      ),
                     ),
                   ),
                 ],
@@ -180,10 +186,4 @@ class ClickableIconContainer extends StatelessWidget {
       ),
     );
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    home: HomePage(),
-  ));
 }

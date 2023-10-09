@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: IconTapExample(),
+    home: MapPage(),
   ));
 }
 
-class IconTapExample extends StatelessWidget {
-  const IconTapExample({Key? key}) : super(key: key);
+class MapPage extends StatelessWidget {
+  const MapPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Icon Tap Example'),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -40,6 +37,18 @@ class IconTapExample extends StatelessWidget {
                 Icons.favorite,
                 size: 50.0,
                 color: Colors.red,
+              ),
+            ),
+            SizedBox(height: 20.0), // Add spacing below the second icon
+            GestureDetector(
+              onTap: () {
+                // Handle the onTap action for the third icon
+                print('Third Icon Tapped');
+              },
+              child: Icon(
+                Icons.location_on,
+                size: 50.0,
+                color: Colors.blue,
               ),
             ),
           ],

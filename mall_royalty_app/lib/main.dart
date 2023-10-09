@@ -5,6 +5,7 @@ import 'package:signup_page/pages/electronics_page.dart';
 import 'package:signup_page/pages/fashion_page.dart';
 import 'package:signup_page/pages/foodcourt_page.dart';
 import 'package:signup_page/pages/home_page.dart';
+import 'package:signup_page/pages/map_page.dart';
 import 'package:signup_page/pages/rating_page.dart';
 import 'package:signup_page/pages/sign_up_pages.dart';
 import 'pages/sign_in_page.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         '/denim': (context) => const DenimDashDescriptionPage(),
         '/elega': (context) => const EleganDescriptionPage(),
         '/active': (context) => const ActivePulseDescriptionPage(),
+        '/map': (context) => const MapPage(),
         '/rating': (context) => const MyShopInfo(),
         '/diskon': (context) => const DiskonPage(),
       },
